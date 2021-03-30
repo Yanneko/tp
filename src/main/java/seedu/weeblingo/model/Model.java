@@ -6,6 +6,7 @@ import java.util.function.Predicate;
 
 import javafx.collections.ObservableList;
 import seedu.weeblingo.commons.core.GuiSettings;
+import seedu.weeblingo.logic.commands.exceptions.CommandException;
 import seedu.weeblingo.model.flashcard.Answer;
 import seedu.weeblingo.model.flashcard.Flashcard;
 import seedu.weeblingo.model.score.Score;
@@ -102,7 +103,7 @@ public interface Model {
     void updateFilteredScoreHistory(Predicate<Score> predicate);
 
     /** Generates a Quiz object and shows the first question */
-    void startQuiz();
+    void startQuiz() throws CommandException;
 
     /** Shows the next question in the Quiz */
     Flashcard getNextFlashcard();

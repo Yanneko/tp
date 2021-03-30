@@ -12,6 +12,7 @@ import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import seedu.weeblingo.commons.core.GuiSettings;
 import seedu.weeblingo.commons.core.LogsCenter;
+import seedu.weeblingo.logic.commands.exceptions.CommandException;
 import seedu.weeblingo.model.flashcard.Answer;
 import seedu.weeblingo.model.flashcard.Flashcard;
 import seedu.weeblingo.model.score.Score;
@@ -185,7 +186,7 @@ public class ModelManager implements Model {
     //=========== Quiz Related =============================================================
 
     @Override
-    public void startQuiz() {
+    public void startQuiz() throws CommandException {
         if (numOfQnsForQuizSession == 0 && tagsForQuizSession == null) {
             this.quizInstance = new Quiz(filteredFlashcards);
             Flashcard next = quizInstance.getNextQuestion();
