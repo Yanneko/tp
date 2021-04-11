@@ -5,10 +5,9 @@ title: Lan Yu Xuan's Project Portfolio Page
 
 ## Project: WeebLingo
 
-Weeblingo is a desktop app for learning the Japanese language via flashcards. It is designed specifically with the needs
-of budding Japanese language students in mind, providing everything one would need to embark on their academic journey.
-With a simple and friendly design and carefully crafted user-centric features, one can learn Japanese at a comfortable
-pace to the level of proficiency one desires.
+Weeblingo is a desktop app for learning Japanese through flashcards, optimized for use via a Command Line Interface (CLI)
+while still having the benefits of a Graphical User Interface (GUI). With a nice and friendly interface,
+users can learn Japanese at a comfortable pace with this application. The user interacts with it via a CLI, and it has a GUI created with JavaFX. It is written in Java, and has about 10 kLoC.
 
 Given below are my contributions to the project.
 
